@@ -1,0 +1,365 @@
+<html>
+<title> Terasamogi </title>
+<head>
+<link rel="stylesheet" type="text/css" href="file:///G:/terasamogi/fontawesome-free-5.12.1-web/css/all.css">
+<style>
+body {
+	margin: 0px;
+	padding: 0;
+	background: url(back.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	
+
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 180vh;
+	width: 100%;
+	z-index: -5;
+}
+
+
+.tagline {
+	position: absolute;
+	top: 105px;
+	left: 60px;
+	z-index: 1;
+	font-family: Calibri;
+	color: white;
+	font-size: 40;
+	
+}
+.tagline2 {
+	position: absolute;
+	top: 135px;
+	left: 60px;
+	z-index: 1;
+	font-family: Calibri;
+	color: white;
+	font-size: 30;
+	
+}
+
+ol {
+	position: absolute;
+	top: 180px;
+	left: 60px;
+	width: 85%;
+	height: 50vh;
+	background: #ccc;
+	margin: 0;
+	padding: 0;
+	z-index: 1;
+}
+
+ol li {
+	list-style: none;
+	position: relative;
+	width: 25%;
+	height: 100%;
+	border-right: 1.5px solid gray;
+	float: left;
+	box-sizing: border-box;
+	transition: 0.5s;
+	text-align: center;
+	overflow: hidden;
+}
+ol li:nth-child(1) {
+	background-image: url(1.png);
+	background-size: cover;
+	background-position: left;
+}
+
+ol li:nth-child(2) {
+	background-image: url(2t.png);
+	background-size: cover;
+	background-position: left;
+}
+ol li:nth-child(3) {
+	background-image: url(3.png);
+	background-size: cover;
+	background-position: left;
+}
+ol li:nth-child(4) {
+	background-image: url(4.png);
+	background-size: cover;
+	background-position: left;
+}
+
+
+
+ol:hover li {
+	width: 20%;
+
+}
+ol li:hover {
+	width: 40%;
+	
+}
+
+ol li .content {
+	position: absolute;
+	bottom: -1%;
+	left: 0;
+	width: 100%;
+	background: rgba(0,0,0,.8);
+	box-sizing: border-box;
+	color: #fff;
+	opacity: 0;
+}
+ol li:hover .content {
+	bottom: 0;
+	transition: 0.5s;
+	transition-delay: 0.5s;
+	opacity: 1;
+}
+		
+nav {
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	padding: 15px 80px;
+	background-color: rgb(172, 149, 19);
+	box-sizing: border-box;
+	transition: .5s;
+}
+nav .logo {
+	float: left;
+	top: 10px;
+}
+nav .logo img {
+	top: 10px;
+	height: 60px;
+	transition: .5s;
+}
+
+nav ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+
+}
+nav ul li a {
+	line-height: 30px;
+	color: #fff;
+	padding: 5px 20px;
+	text-decoration: none;
+	font-family: Segoe UI, bold;
+	transition: .5s;
+}	
+
+nav ul li a.active , 
+nav ul li a:hover {
+	color:BLACK;
+	background: red;
+	text-transform: uppercase;
+	
+}
+
+.box {
+	position: absolute;
+	top: 540px;
+	left: 60px;
+	height: 330px;
+	width: 85%;
+	padding: 10px 65px;
+	box-sizing: border-box;
+	background: rgb(231, 194, 125);
+	border-radius: 4px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	display: flex;
+	
+}
+.box .imgbx {
+	width: 450px;
+	flex: 0 0 450px;
+}
+
+.box .imgbx img	{
+	max-width: 100%;
+}
+.box .content2 {
+	padding-left: 20px;
+}
+.box .content2 h2 {
+	margin: 0;
+	padding-left: 0;
+	color: white;
+}
+.box .content2 p {
+	margin: 0;
+	padding-left: 10px 0 0;
+	text-allign: justify;
+	color: white;
+	font-size: 18px;
+}
+
+.footer {
+	position: absolute;
+	top: 850px;
+	height: 200px;
+	width: 100%;
+	padding: 10px 65px;
+	box-sizing: border-box;
+
+	border-radius: 4px;
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+	display: flex;
+	text-align: center;
+	
+}
+.footer .logoimg {
+	text-align: center;
+	width: 150p;
+	
+}
+
+.footer .logoimg img	{
+	max-width: 30%;
+	position: center;
+}
+
+.smedia {
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.smedia ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+.smedia ul li {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 0px 10px;
+	border-radius: 100%;
+	background: #32cd32;
+
+}
+.smedia ul li a {
+	color: #000;
+	font-size: 30px;
+}
+.smedia ul li a i {
+	line-height: 50px;
+}
+.botfoot {
+	position: absolute;
+	top: 300px;
+	left: 0;
+	height: 25px;
+	width: 100%;
+	background: grey;
+	text-align: center;
+}
+.botfoot .cntent h5 {
+	margin: 0;
+	color: black;
+	padding: 5px 0;
+	font-size: 15px;
+	height: 5px;
+}
+a:link, a:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: green;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<div class="bground">
+	<div class="overlay"></div>
+	<div class="tagline">
+	<B>Good Morning Everyone<B></div>
+	<div class="tagline2"><B> Today we will talk about Business letters<B></DIV>
+
+	<ol>
+		<li><div class="content">
+		<p>Major parts of a Business Letter</p>
+		<a href="a.html" target="_blank">Visit </a>
+
+
+		</div>
+		</li>
+		<li><div class="content">
+		<p> Optinal Parts of a Business Letter</p>
+		<a href="optional.html" target="_blank">Visit </a>
+		</div>
+		</li>
+		<li><div class="content">
+		<p>Busines Letter Example No.1</p>
+		<a href="default.asp" target="_blank">Visit </a>
+		</div>
+		</li>
+		<li><div class="content">
+		<p>Busines Letter Example No.2</p>
+		<a href="default.asp" target="_blank">Visit </a>
+		</div>
+		</li>
+		
+	</ol>
+</body>
+<body>
+
+
+	<nav>
+	<div class="logo">
+		<img src="B.png" style="width:800px;">>
+	</div>
+		<ul>
+		<li><a href="final.html" class="active"> Home </a></li>
+		<li><a href="https://drive.google.com/drive/folders/1ryljkC7sO7AfxZp6ZeBuF5GLU5QPn12k?fbclid=IwAR1NYjKJ-LC7bOShGIa1ANc48i4Ek5OQIzPg4io1q43iTmU04rS20JZB_iM"> GDRIVE </a></li>
+	</ul>
+
+</nav>	
+
+	<div class="box">
+		<div class="imgbx" >
+		<img src="6.png" width="500" height="300">
+		</div>
+		<div class="content2">
+			<h2>  What is Business Letter?</h2>
+			<p><br>Business letters are written messages to a person or group within a professional setting. Business letters are used when the writer would like to be formal and professional. Letters may vary in length depending on the writer’s objective, purpose, and message of the letter. The letter can address anyone including, but not limited to: clients and customers, managers, agencies, suppliers, and other business personnel or organizations.</p>
+		</div>
+		</div>
+		<h3><br> Ang Importante Mahalaga</H3>
+		<div class="footer">
+		
+
+	
+		
+		<div class="botfoot">
+		<div class="cntent">
+		<h5> All Rights Reserved</h5>
+		</div>
+		</div>
+
+			
+
+
+</body>
+
+</html>
